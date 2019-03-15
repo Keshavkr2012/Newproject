@@ -17,7 +17,7 @@ public class GetApiTest extends TestBase{
 	String serviceURL;
 	String apiURL;
 	String url;
-	Rest_Client restclient;;
+	Rest_Client restclient;
 	
 	
 	@BeforeMethod
@@ -27,6 +27,7 @@ public class GetApiTest extends TestBase{
 		 serviceURL = prop.getProperty("URL");
 		 apiURL = prop.getProperty(serviceURL);
 		 url = serviceURL + apiURL;
+		 System.out.println(url);
 		
 		
 		
